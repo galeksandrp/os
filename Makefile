@@ -76,7 +76,7 @@ os: $(_BUILDER_DIR)
 
 
 $(_BUILDER_DIR):
-	git clone --depth=1 https://github.com/mdevaev/pi-builder $(_BUILDER_DIR)
+	git clone --depth=1 -b pacman-alpm-fix https://github.com/galeksandrp/pi-builder $(_BUILDER_DIR)
 
 
 update: $(_BUILDER_DIR)
